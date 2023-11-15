@@ -5,6 +5,7 @@
 		{title: "about", href:"/About"},
 		{title: "contact", href:"/Contact"}
 	]
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
 <div class="min-w-full flex justify-between card-header items-center ">
@@ -14,6 +15,7 @@
 	<li class="btn variant-filled-surface hover:variant-filled-secondary"><a {href}>{title}</a></li>
 	{/each}
 </ul>
+<LightSwitch />
 </div>
 
 

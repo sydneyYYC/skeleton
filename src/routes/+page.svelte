@@ -6,14 +6,15 @@
 	let title = "Hello!"
 </script>
 
+
 <AppShell>
 	<AppBar>
 		<svelte:fragment slot="headline"> <h2 class="text-5xl text-center">{title}</h2></svelte:fragment>
 		</AppBar>
 
 	<!-- Router Slot -->
-	<slot />
 	
+	<slot />
 	<svelte:fragment slot="pageFooter"><Footer/></svelte:fragment>
 	<!-- (footer) -->
 </AppShell>
