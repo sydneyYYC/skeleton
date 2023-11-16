@@ -2,8 +2,8 @@
 	import '../app.postcss';
 	 let navLinks = [
 		{title: "home", href:"/"},
-		{title: "The Orange", href:"/TheOrange"},
-		{title: "I peeled my orange today", href:"/Ipeeledmyorange"}
+		{title: "About Us", href:"/TheOrange"},
+		{title: "Our Products", href:"/Ipeeledmyorange"}
 	]
 	
 	
