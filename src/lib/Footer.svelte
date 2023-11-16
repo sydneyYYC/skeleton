@@ -6,8 +6,8 @@
 ]
 </script>
 
-<footer class="min-w-full m-0 self-end flex justify-between bg-secondary-900">
-  <div class="bg-secondary-900 flex flex-col p-4 mx-4">
+<footer class="min-w-full m-0 self-end flex justify-between ">
+  <div class=" flex flex-col p-4 mx-4">
     <p class="self-start text-xl">Links</p>
     <ul class="">
       {#each footerLinks as {href, title}}
