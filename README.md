@@ -6,10 +6,23 @@
 
 ### Bugs
 
+- Weird carry over of my header layout to the 3rd page? need to look for fixes for that
 ### Building 
 
 what kind of website should i make ?
 
+I wanted to make a website about orange poems - but i then realized this is supposed to be placeholder only content ... so i scrapped that and just left them here. maybe for a personal project ill make my oranges website. 
+
+This is why my folders were orange themed at one point. pls enjoy the poems about oranges below if u have the time.
+
+#### Attributions
+[icons](https://www.iconfinder.com/)
+
+[images](https://unsplash.com/)
+
+[skeletonUI](https://www.skeleton.dev/)
+
+This website uses the Wintry Theme
 --------------------------------------------------
 
 The Orange by Wendy Cope 
