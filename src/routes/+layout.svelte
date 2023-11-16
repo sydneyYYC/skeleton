@@ -5,7 +5,7 @@
 		{title: "The Orange", href:"/TheOrange"},
 		{title: "I peeled my orange today", href:"/Ipeeledmyorange"}
 	]
-	let title = 'heading';
+	
 	
 	import Footer from "../lib/Footer.svelte";
 	import { AppShell } from "@skeletonlabs/skeleton";
@@ -25,7 +25,7 @@
 
 	<AppShell>
 		<AppBar>
-			<!-- <svelte:fragment slot="headline"> <h2 class="text-5xl text-center">{title}</h2></svelte:fragment> -->
+			
 		</AppBar>
 	
 		<slot />
