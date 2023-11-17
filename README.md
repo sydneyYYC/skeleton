@@ -7,6 +7,8 @@
 ### Bugs
 
 - Weird carry over of my header layout to the 3rd page? need to look for fixes for that
+
+- tried to make my cards into a component to use but the spread operator isnt working to inject values from the page into the card. 
 ### Building 
 
 what kind of website should i make ?
@@ -55,6 +57,7 @@ https://stackoverflow.com/questions/19400183/how-to-style-chat-bubble-in-iphone-
 
 ------------------------------------------------------------------------------------
 Among the Orange Groves by Lissa Miller 
+
 wherever i am the stars are
 and the stars dissolve, resistant
 perfume of a dizzy mood, shadows

@@ -8,10 +8,10 @@
 	
 	
 	import Footer from "../lib/Footer.svelte";
-	import { AppShell } from "@skeletonlabs/skeleton";
-	import { AppBar } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar } from "@skeletonlabs/skeleton";
 </script>
 
+<!-- Nav Bar -->
 <div class="min-w-full flex justify-between card-header items-center my-4">
 	<div class="placeholder-circle w-10 btn-icon variant-ghost-secondary hover:variant-filled-secondary" />
 	
@@ -22,14 +22,15 @@
 </ul>
 </div>
 
-
+	<!-- main page -->
 	<AppShell>
+		<!-- header section -->
 		<AppBar>
 			
 		</AppBar>
 	
 		<slot />
-
+		<!-- footer -->
 		<svelte:fragment slot="pageFooter"><Footer/></svelte:fragment>
 		<!-- (footer) -->
 	</AppShell>

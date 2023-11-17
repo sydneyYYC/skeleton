@@ -7,7 +7,7 @@
 </script>
 
 <footer class="min-w-full m-0 self-end flex justify-between bg-surface-800">
-  <div class=" flex flex-col p-4 mx-4 ">
+  <div class=" flex flex-col p-4 mx-4 self-center justify-self-center">
     <p class="self-start text-xl px-2">Links</p>
     <ul class="max-w-max">
       {#each footerLinks as {href, title}}
