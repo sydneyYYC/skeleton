@@ -1,7 +1,11 @@
 <script>
 	import { AppBar, AppShell, LightSwitch } from "@skeletonlabs/skeleton";
+	import CardWithoutIcon from "../../lib/CardWithoutIcon.svelte";
 	
   let title = "About Us"
+	let cardOne = {heading: "Section One", description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, temporibus?"};
+	let cardTwo = {heading: "Section Two", description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, temporibus?"};
+	let cardThree = {heading: "Section Three", description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, temporibus?"}
 </script>
 
 <AppBar><svelte:fragment slot="headline"> <h2 class="text-5xl text-center justify-center">{title}</h2></svelte:fragment></AppBar>
@@ -14,20 +18,9 @@
 	</div>
 	</div>
 	<section class="flex bg-surface-800">
-		<div class="p-4 m-4 flex flex-col w-[30%] h-[250px] justify-center bg-tertiary-300 items-center">
-			<h5 class="text-surface-900 justify-self-center text-2xl font-bold my-4">Section One</h5>
-      <p class="max-w-[20ch] text-lg text-surface-800 justify-self-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, temporibus?</p>
-		</div>
-
-		<div class="p-4 m-4 flex flex-col w-[30%] h-[250px] justify-center bg-tertiary-300 items-center">
-			<h5 class="text-surface-900 justify-self-center text-2xl font-bold my-4">Section Two</h5>
-      <p class="max-w-[20ch] text-lg text-surface-800 justify-self-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, temporibus?</p>
-		</div>
-
-		<div class="p-4 m-4 flex flex-col w-[30%] h-[250px] justify-center bg-tertiary-300 items-center">
-			<h5 class="text-surface-900 justify-self-center text-2xl font-bold my-4">Section Three</h5>
-      <p class="max-w-[20ch] text-lg text-surface-800 justify-self-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, temporibus?</p>
-		</div>
+		<CardWithoutIcon {...cardOne}></CardWithoutIcon>
+		<CardWithoutIcon {...cardTwo}></CardWithoutIcon>
+		<CardWithoutIcon {...cardThree}></CardWithoutIcon>
 	</section>
 	<section class="flex flex-col justify-center items-center p-6 min-w-full bg-surface-700">
 		<h3 class="text-2xl font-bold text-tertiary-200 m-4">More Info</h3>

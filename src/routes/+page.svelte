@@ -7,11 +7,25 @@
 	
 	let title = 'HOME';
 
-	let cardOne = [
-		{imgSrc: "./assets/04-logo.svg"},
-		{imgAlt: "logo placeholder" },
-		{heading: "About Us"}
-	];
+	let cardOne = {
+		imgSrc: "./assets/04-logo.svg",
+		imgAlt: "logo placeholder" ,
+		heading: "About Us"
+	};
+	
+	let cardTwo = {
+		imgSrc: "./assets/03-logo.svg",
+		imgAlt: "logo placeholder" ,
+		heading: "Our Products"
+	};
+	
+	let cardThree = 
+	{
+		imgSrc: "./assets/01-logo.svg",
+		imgAlt: "logo placeholder" ,
+		heading: "Contact"
+	};
+
 </script>
 
 <AppBar><svelte:fragment slot="headline"> <h2 class="text-5xl text-center justify-center">{title}</h2></svelte:fragment></AppBar>
@@ -26,26 +40,17 @@
 	</div>
 	<!-- cards section -->
 	<section class="flex bg-surface-800">
-		<div class="p-4 m-4 flex flex-col w-[30%] h-[250px] justify-center bg-secondary-300 items-center">
-			<img class="flex-none w-[100px] h-[100px] fill-white stroke-white " src="./assets/04-logo.svg" alt = "logo placeholder">
-			<h5 class="text-surface-900 justify-self-center text-xl font-bold mt-4">About Us</h5>
-		</div>
 
-		<div class="p-4 m-4 flex flex-col  w-[30%] justify-center bg-secondary-300 items-center">
-			<img class="flex-none w-[100px] h-[100px] fill-white stroke-white p-2" src="./assets/03-logo.svg" alt = "logo placeholder">
-			<h5 class="text-surface-900  justify-self-center text-lg mt-4">Our Products</h5>
-		</div>
-
-		<div class="p-4 m-4 flex flex-col  w-[30%] justify-center bg-secondary-300 items-center">
-			<img class="flex-none w-[100px] h-[100px] fill-white stroke-white p-2" src="./assets/01-logo.svg" alt = "logo placeholder">
-			<h5 class="text-surface-900  justify-self-center text-lg mt-4">Contact</h5>
-		</div>
+		<CardWithIcon {...cardOne}></CardWithIcon> 
+		<CardWithIcon {...cardTwo}></CardWithIcon> 
+		<CardWithIcon {...cardThree}></CardWithIcon> 
+		
 	</section>
 	<section class="flex flex-col justify-center items-center p-6 min-w-full bg-surface-700">
 		<h3 class="text-2xl font-bold text-secondary-100 m-4">Info About Us</h3>
 		<p class="max-w-prose m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae, earum ullam dolores cum dolorem. Culpa eveniet dolor provident eos. Alias aperiam laudantium molestiae aliquid. Quam officiis nostrum sapiente odio iure provident voluptate, ullam labore cumque reiciendis excepturi dolorum exercitationem!</p>
 	</section>
-	<!-- <CardWithIcon imgAlt={cardOne.imgAlt} imgSrc={cardOne.imgSrc} heading={cardOne.heading}></CardWithIcon>  -->
+	
 </main>
 
 	

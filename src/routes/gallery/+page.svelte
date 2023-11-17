@@ -8,6 +8,7 @@
     {heading: "product 6", src:"./assets/cards/06-cardimg.jpg", alt: "sleeping bag"}
   ]
 </script>
+
 <h4 class="text-2xl mr-8 text-center">OUR PRODUCTS</h4>
 <div class=" ml-8 text-center flex g-2 flex-wrap m">
   {#each cardItems as {heading, src, alt}}
